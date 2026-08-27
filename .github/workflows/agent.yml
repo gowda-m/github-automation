@@ -1,17 +1,31 @@
 name: AI Automation Test
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
-  test:
+  analyze:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     steps:
-      - name: Test automation
-        run: |
-          echo "GitHub AI automation is working!"
-          echo "Repository: ${{ github.repository }}"
-          echo "Commit: ${{ github.sha }}"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install OpenAI package
+        run: pip install openai
+
+      - name: Run AI analysis
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python agent/agent.py
