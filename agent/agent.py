@@ -42,7 +42,7 @@ Analyze the repository below.
 Identify:
 1. Bugs or problems finding 
 2. Missing tests
-3. Security concerns
+3. Security concerns anf for infosec
 4. Useful improvements
 
 Do NOT write or modify any files.
