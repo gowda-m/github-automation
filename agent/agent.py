@@ -40,9 +40,9 @@ You are reviewing a small GitHub automation project.
 Analyze the repository below.
 
 Identify:
-1. Bugs or problems finding 
+1. Bugs or issues 
 2. Missing tests
-3. Security concerns anf for infosec
+3. Security concerns
 4. Useful improvements
 
 Do NOT write or modify any files.
