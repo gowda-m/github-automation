@@ -45,8 +45,8 @@ Identify:
 3. Security concerns
 4. Useful improvements
 
-Do NOT write or modify any files.
-Return a concise list of recommendations.
+Do NOT modify any file or anything
+Return a concise list of recommendations on this
 
 Repository:
 
